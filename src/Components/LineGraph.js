@@ -62,7 +62,8 @@ const LineGraph = ({ casesType }) => {
   }, [casesType]);
   return (
     <div>
-      {data?.length > 0 && (
+      {" "}
+      {data.length > 0 && (
         <Line
           data={{
             datasets: [
@@ -76,7 +77,7 @@ const LineGraph = ({ casesType }) => {
           }}
           options={options}
         />
-      )}
+      )}{" "}
     </div>
   );
 };
